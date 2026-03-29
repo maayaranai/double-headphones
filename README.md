@@ -1,175 +1,113 @@
-# Double Headphones
+<p align="center">
+  <img src="docs/banner.jpg" alt="Two people watching a movie together on a train, each with their own headphones" width="100%">
+</p>
 
-[![Support on Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20Development-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/ranmazor)
+<h1 align="center">Double Headphones</h1>
 
-**Share audio to multiple headphones simultaneously on Windows. No drivers, no complexity.**
+<p align="center">
+  <strong>Share audio to multiple headphones simultaneously on Windows</strong><br>
+  No drivers. No complexity. Just click and listen.
+</p>
 
-**Free forever -- donations appreciated.**
-
-Two people, one laptop, two headphones. Watch movies together, each with your own pair.
-
-[Download the latest release](https://github.com/maayaranai/double-headphones/releases)
+<p align="center">
+  <a href="https://github.com/maayaranai/double-headphones/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/Download-Windows%20x64-blue?style=for-the-badge&logo=windows" alt="Download"></a>
+  &nbsp;
+  <a href="https://ko-fi.com/ranmazor"><img src="https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-ff5e5b?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi"></a>
+</p>
 
 ---
 
-![Screenshot placeholder](docs/screenshot.png)
+## The Problem
 
----
+You're on a train with your partner. You want to watch a movie together on your laptop. But Windows only plays audio through **one device at a time**.
 
-## How It Works
+Your options? Share one pair of earbuds (uncomfortable). Use a splitter cable (who carries those?). Let one person use the laptop speaker (everyone on the train hates you).
 
-Double Headphones captures audio from a specific application (like Chrome or VLC), then sends that same audio to two or more output devices at the same time. It uses built-in Windows audio APIs -- no virtual audio drivers, no kernel modifications, no complicated routing.
+## The Solution
 
-1. You pick the app that is playing audio (e.g., your browser).
-2. You pick two headphones (or any two audio outputs).
-3. You press Share. Both headphones play the same audio in sync.
+**Double Headphones** captures your system audio and routes it to two or more output devices at the same time. Bluetooth, wired, USB — any combination works.
 
-When you stop sharing, everything goes back to normal automatically.
+1. Connect both headphones
+2. Select them in the app
+3. Click **Share Audio**
+4. Both headphones play the same audio, in sync
+
+That's it. When you stop sharing, everything goes back to normal automatically.
 
 ## Features
 
-- **Multi-device output** -- play audio on two or more devices simultaneously
-- **Per-app capture** -- capture audio from a single application, not the entire system
-- **No drivers required** -- pure user-mode Windows APIs, nothing to install at the system level
-- **Simple interface** -- three dropdowns and one button, nothing more
-- **Bluetooth support** -- works with Bluetooth headphones, wired headphones, USB DACs, speakers, or any mix
-- **Independent volume control** -- adjust volume for each output device separately
-- **Latency compensation** -- adjustable delay slider to sync Bluetooth audio with video
-- **Clock drift correction** -- automatic sample-rate drift compensation for long listening sessions
-- **Crash recovery** -- if the app exits unexpectedly, your system audio is restored to its original state
-- **System tray mode** -- minimize to tray and forget about it
-- **Lightweight** -- under 50 MB installed, under 5% CPU usage
-- **Free forever** -- no ads, no telemetry, no trial limits
+- **Multi-device output** — play audio on 2+ devices simultaneously
+- **No drivers required** — pure Windows APIs, nothing to install
+- **Dead simple** — three dropdowns and one button
+- **Any headphones** — Bluetooth, wired, USB DACs, speakers, any mix
+- **Per-device volume** — adjust each output independently
+- **Latency compensation** — sync Bluetooth with video using the slider
+- **Crash-safe** — if the app crashes, your audio restores automatically
+- **System tray** — minimize and forget about it
+- **Lightweight** — under 5% CPU
+- **Free forever** — no ads, no telemetry, no tracking, no trial
+
+## Download
+
+**[Download DoubleHeadphones.exe](https://github.com/maayaranai/double-headphones/releases/tag/v1.0.0)** (Windows 10/11, 64-bit)
+
+Single portable .exe — no installation needed. Just download and run.
 
 ## System Requirements
 
-| Requirement | Minimum |
-|-------------|---------|
-| Operating System | Windows 10 build 20348 or later, or Windows 11 |
-| Architecture | 64-bit (x64) |
-| Runtime | .NET 8 (included in the installer) |
-| Audio | At least two audio output devices connected |
-| RAM | 50 MB |
-| Disk | 50 MB |
-
-> **Why build 20348?** Double Headphones uses the Process Loopback Capture API introduced in that build. Earlier versions of Windows 10 do not have this API. You can check your build number by pressing Win+R, typing `winver`, and pressing Enter.
-
-## Installation
-
-### Option A: Installer (recommended)
-
-1. Download `DoubleHeadphones-1.0.0-Setup.exe` from the [Releases](https://github.com/maayaranai/double-headphones/releases) page.
-2. Run the installer. It will guide you through setup.
-3. Optionally create a desktop shortcut and enable "start with Windows."
-4. Launch Double Headphones from the Start Menu or desktop shortcut.
-
-### Option B: Portable
-
-1. Download `DoubleHeadphones-1.0.0-portable.zip` from the [Releases](https://github.com/maayaranai/double-headphones/releases) page.
-2. Extract to any folder.
-3. Run `DoubleHeadphones.exe`.
-
-No administrator privileges are required for either option.
-
-## Usage
-
-1. **Connect your headphones.** Pair or plug in both audio devices. Make sure Windows recognizes them (check Sound Settings).
-2. **Start playing media.** Open your browser, media player, or any app and start playing audio or video.
-3. **Open Double Headphones.** Launch the application.
-4. **Select the audio source.** In the "Audio Source" dropdown, pick the app that is playing audio (e.g., "Chrome", "VLC").
-5. **Select Device A.** Choose the first headphone or output device.
-6. **Select Device B.** Choose the second headphone or output device.
-7. **Click Share.** Both devices will start playing the same audio.
-8. **Adjust volume.** Use the per-device volume sliders if one pair is louder than the other.
-9. **Adjust latency (if needed).** If Bluetooth audio is slightly behind the video, use the latency slider to add a delay to the wired device so they match.
-10. **Click Stop** when you are done. The app restores your original audio routing.
+| | Minimum |
+|---|---|
+| **OS** | Windows 10 (build 20348+) or Windows 11 |
+| **Arch** | 64-bit (x64) |
+| **Audio** | Two or more output devices connected |
 
 ## FAQ
 
-### Why can I still hear faint audio from my laptop speakers?
+<details>
+<summary><strong>Why do I hear faint audio from my laptop speakers?</strong></summary>
+<br>
+The app lowers the source volume to near-zero on the default device to keep the audio pipeline alive. It's effectively inaudible. Mute your laptop speakers for complete silence — you'll be listening through headphones anyway.
+</details>
 
-Double Headphones lowers the source app's volume to near-zero (-40 dB) on the original output to keep the audio pipeline alive. This is effectively inaudible in most environments. It does not fully mute because Windows may suspend the audio pipeline for muted apps, which would break the capture.
+<details>
+<summary><strong>Netflix/Disney+ audio is silent</strong></summary>
+<br>
+Streaming apps with DRM block audio capture. Use Chrome instead of the native Windows app — it works perfectly.
+</details>
 
-### Netflix / Disney+ audio is silent when sharing
+<details>
+<summary><strong>Audio is out of sync with video</strong></summary>
+<br>
+Bluetooth adds 150-250ms of latency. Use the latency slider in the app, or adjust audio delay in your video player (VLC: press J/K).
+</details>
 
-Streaming apps that use DRM (Digital Rights Management) with Protected Media Path will block audio capture. This is a Windows-level protection that no user-mode application can bypass.
+<details>
+<summary><strong>Two Bluetooth headphones are stuttering</strong></summary>
+<br>
+A single Bluetooth adapter may struggle with two streams. A second USB Bluetooth adapter (~$10) solves this completely.
+</details>
 
-**Workaround:** Use a web browser (Chrome is recommended) instead of the native Windows app. Browser-played audio is not protected by the same mechanism.
-
-### Audio is out of sync with video
-
-Bluetooth headphones introduce 150-250ms of latency due to the Bluetooth A2DP encoding and transmission process. This is a physics limitation of the Bluetooth protocol, not a bug.
-
-**Fix:** Use the latency compensation slider in Double Headphones to add a matching delay to the non-Bluetooth device. Most video players also have their own audio delay settings -- check your player's preferences.
-
-### Can I use more than 2 devices?
-
-The architecture supports N output devices. Version 1.0 ships with a two-device interface. Multi-device support (3+) is planned for a future release.
-
-### Does it work with gaming audio?
-
-Yes, as long as the game uses standard Windows audio (WASAPI Shared Mode). Games using ASIO or WASAPI Exclusive Mode cannot be captured.
-
-### Does it work with Spotify / system sounds?
-
-Yes. Any application that appears in the Windows Volume Mixer can be captured.
+<details>
+<summary><strong>Can I use more than 2 devices?</strong></summary>
+<br>
+Yes — the architecture supports unlimited devices. The current UI shows two, with more planned.
+</details>
 
 ## Known Limitations
 
-These are honest constraints that cannot be solved at the application level:
+- **DRM content** (Netflix app, Edge) — use Chrome as workaround
+- **Bluetooth latency** (150-250ms) — physics, use the latency slider
+- **Dual BT on single adapter** — may stutter, second USB adapter recommended
+- **Windows 10 before build 20348** — required API not available
 
-- **DRM-protected content** -- Apps using Protected Media Path (Netflix Windows app, Edge with PlayReady) will produce silence. Use Chrome as a workaround.
-- **Bluetooth latency** -- Bluetooth A2DP adds 150-250ms of inherent delay. The latency slider helps, but cannot eliminate it.
-- **Dual Bluetooth on a single adapter** -- Running two Bluetooth headphones on one Bluetooth radio may cause audio dropouts depending on adapter firmware. A second USB Bluetooth adapter is recommended if you experience issues.
-- **ASIO applications** -- Apps using ASIO bypass Windows audio entirely and cannot be captured.
-- **Exclusive mode applications** -- Apps that lock an audio device in WASAPI Exclusive Mode cannot be captured.
-- **Windows 10 builds before 20348** -- The Process Loopback API does not exist on older builds. The app requires build 20348+.
-- **Elevated processes** -- If the source app is running as Administrator and Double Headphones is not, capture may fail. Run Double Headphones as Administrator in that case.
+## Support Development
 
-## Tech Stack
-
-| Component | Technology |
-|-----------|------------|
-| Language | C# 12 |
-| Framework | .NET 8, WPF |
-| Audio API | WASAPI (via NAudio) |
-| Win32 Interop | CsWin32 source generator |
-| System Tray | H.NotifyIcon.Wpf |
-| Installer | Inno Setup |
-| Target | Windows 10/11, x64 |
-
-## Building from Source
-
-```bash
-git clone https://github.com/maayaranai/double-headphones.git
-cd double-headphones
-dotnet publish src/DoubleHeadphones/DoubleHeadphones.csproj -c Release -o publish
-```
-
-To build the installer, install [Inno Setup 6](https://jrsoftware.org/isinfo.php) and compile `installer/setup.iss`.
-
-## Contributing
-
-Contributions are welcome. Please:
-
-1. Fork the repository and create a feature branch.
-2. Follow the existing code style (C# conventions, nullable enabled).
-3. Test on both Windows 10 (build 20348+) and Windows 11 if possible.
-4. Open a pull request with a clear description of the change.
-
-For bug reports, please include your Windows version (`winver`), audio device types, and the app you were trying to capture.
-
-## Support
-
-If Double Headphones is useful to you, consider [buying me a coffee on Ko-fi](https://ko-fi.com/ranmazor). It helps fund continued development and new features.
+Double Headphones is free forever. If it saves you from sharing earbuds on your next trip, consider [buying me a coffee](https://ko-fi.com/ranmazor).
 
 ## License
 
-Proprietary -- free for personal use. See [LICENSE](LICENSE) for the full text.
+Proprietary — free for personal use. See [LICENSE](LICENSE) for details.
 
-## Credits
+---
 
-- [NAudio](https://github.com/naudio/NAudio) -- .NET audio library by Mark Heath
-- [H.NotifyIcon](https://github.com/HavenDV/H.NotifyIcon) -- WPF system tray icon library
-- [CsWin32](https://github.com/microsoft/CsWin32) -- Win32 P/Invoke source generator by Microsoft
-- [Inno Setup](https://jrsoftware.org/isinfo.php) -- Installer compiler by Jordan Russell
+<p align="center">Built with ♥ for couples who travel together</p>
