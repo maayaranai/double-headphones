@@ -1,6 +1,6 @@
 # Double Headphones
 
-[![Support on Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20Development-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/doubleheadphones)
+[![Support on Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20Development-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/ranmazor)
 
 **Share audio to multiple headphones simultaneously on Windows. No drivers, no complexity.**
 
@@ -8,7 +8,7 @@
 
 Two people, one laptop, two headphones. Watch movies together, each with your own pair.
 
-[Download the latest release](https://github.com/double-headphones/double-headphones/releases)
+[Download the latest release](https://github.com/maayaranai/double-headphones/releases)
 
 ---
 
@@ -58,14 +58,14 @@ When you stop sharing, everything goes back to normal automatically.
 
 ### Option A: Installer (recommended)
 
-1. Download `DoubleHeadphones-1.0.0-Setup.exe` from the [Releases](https://github.com/double-headphones/double-headphones/releases) page.
+1. Download `DoubleHeadphones-1.0.0-Setup.exe` from the [Releases](https://github.com/maayaranai/double-headphones/releases) page.
 2. Run the installer. It will guide you through setup.
 3. Optionally create a desktop shortcut and enable "start with Windows."
 4. Launch Double Headphones from the Start Menu or desktop shortcut.
 
 ### Option B: Portable
 
-1. Download `DoubleHeadphones-1.0.0-portable.zip` from the [Releases](https://github.com/double-headphones/double-headphones/releases) page.
+1. Download `DoubleHeadphones-1.0.0-portable.zip` from the [Releases](https://github.com/maayaranai/double-headphones/releases) page.
 2. Extract to any folder.
 3. Run `DoubleHeadphones.exe`.
 
@@ -141,7 +141,7 @@ These are honest constraints that cannot be solved at the application level:
 ## Building from Source
 
 ```bash
-git clone https://github.com/double-headphones/double-headphones.git
+git clone https://github.com/maayaranai/double-headphones.git
 cd double-headphones
 dotnet publish src/DoubleHeadphones/DoubleHeadphones.csproj -c Release -o publish
 ```
@@ -161,7 +161,7 @@ For bug reports, please include your Windows version (`winver`), audio device ty
 
 ## Support
 
-If Double Headphones is useful to you, consider [buying me a coffee on Ko-fi](https://ko-fi.com/doubleheadphones). It helps fund continued development and new features.
+If Double Headphones is useful to you, consider [buying me a coffee on Ko-fi](https://ko-fi.com/ranmazor). It helps fund continued development and new features.
 
 ## License
 
