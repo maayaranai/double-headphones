@@ -1,0 +1,12 @@
+# No source code in this repo
+*.cs
+*.csproj
+*.sln
+*.xaml
+*.xaml.cs
+src/
+obj/
+bin/
+*.user
+*.suo
+.vs/
