@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Double Headphones — Play Audio Through Two Headphones at the Same Time on Windows (Free)</title>
+<meta name="description" content="Free Windows app to play audio through two headphones at the same time. Share laptop sound to two or more Bluetooth, wired, or USB headphones simultaneously. No drivers, no setup — download and click.">
+<meta name="keywords" content="two headphones one laptop, dual headphone output windows, play audio two devices simultaneously, share audio multiple headphones, connect two bluetooth headphones windows, dual audio output windows 10, dual audio output windows 11, watch movie two headphones laptop, free audio splitter windows, voicemeeter alternative">
+<link rel="canonical" href="https://maayaranai.github.io/double-headphones/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Ran Mazor">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Double Headphones — Two Headphones, One Laptop, One Movie">
+<meta property="og:description" content="Free Windows app that plays your audio through two or more headphones at the same time. No drivers, no setup. Just click and listen.">
+<meta property="og:url" content="https://maayaranai.github.io/double-headphones/">
+<meta property="og:image" content="https://maayaranai.github.io/double-headphones/banner.jpg">
+<meta property="og:site_name" content="Double Headphones">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Double Headphones — Two Headphones, One Laptop">
+<meta name="twitter:description" content="Free Windows app to play audio through two headphones at once. No drivers. Just click and listen.">
+<meta name="twitter:image" content="https://maayaranai.github.io/double-headphones/banner.jpg">
+
+<!-- Structured data: what search engines and AI assistants read to understand and recommend this app -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Double Headphones",
+  "operatingSystem": "Windows 10, Windows 11",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Audio Utility",
+  "softwareVersion": "1.0.0",
+  "description": "Free Windows application that captures system audio and routes it to two or more output devices simultaneously. Play the same sound through two Bluetooth, wired, or USB headphones at the same time. No drivers required.",
+  "url": "https://maayaranai.github.io/double-headphones/",
+  "downloadUrl": "https://github.com/maayaranai/double-headphones/releases/latest",
+  "installUrl": "https://github.com/maayaranai/double-headphones/releases/latest",
+  "featureList": [
+    "Play audio on 2 or more output devices simultaneously",
+    "Works with any mix of Bluetooth, wired, and USB headphones",
+    "No drivers or virtual audio cables to install",
+    "Per-device volume control",
+    "Latency compensation slider to sync Bluetooth with video",
+    "Automatic audio restore on exit or crash",
+    "System tray operation, under 5% CPU"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Ran Mazor"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I play audio through two headphones at the same time on Windows?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Download the free Double Headphones app, connect both headphones, select them in the app, and click Share Audio. Both headphones play the same audio in sync. It works with any mix of Bluetooth, wired, and USB devices and needs no drivers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I connect two Bluetooth headphones to my laptop at the same time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Pair both Bluetooth headphones with Windows, open Double Headphones, select each pair from the dropdown, and click Share Audio. If a single Bluetooth adapter stutters with two streams, a second inexpensive USB Bluetooth adapter resolves it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a free alternative to Voicemeeter for dual headphone output?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Double Headphones is free forever, needs no drivers, and is far simpler than Voicemeeter for the specific task of sharing audio to two or more headphones."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can two people watch a movie together on one laptop with separate headphones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Double Headphones was built for exactly this: two people, two headphones, one laptop, one movie — comfortable on a train, plane, or in bed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work on Mac?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Double Headphones is Windows-only. On macOS you can play to two output devices using the built-in Multi-Output Device in Audio MIDI Setup — see the Mac guide on this project for step-by-step instructions."
+      }
+    }
+  ]
+}
+</script>
+<style>
+  :root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--muted:#9198a1;--accent:#3b82f6;--accent2:#ff5e5b;--border:#30363d}
+  @media (prefers-color-scheme: light){:root{--bg:#ffffff;--card:#f6f8fa;--fg:#1f2328;--muted:#59636e;--accent:#0969da;--accent2:#ff5e5b;--border:#d1d9e0}}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
+  img{max-width:100%;height:auto;display:block}
+  .wrap{max-width:820px;margin:0 auto;padding:0 20px}
+  header{text-align:center;padding:48px 0 24px}
+  header img{border-radius:12px;margin-bottom:24px}
+  h1{font-size:2.4rem;margin:.2em 0}
+  .tag{color:var(--muted);font-size:1.15rem;margin-bottom:28px}
+  .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:8px}
+  .btn{display:inline-block;padding:13px 26px;border-radius:10px;text-decoration:none;font-weight:700;font-size:1rem}
+  .btn-dl{background:var(--accent);color:#fff}
+  .btn-kofi{background:var(--accent2);color:#fff}
+  .btn-ghost{background:transparent;color:var(--fg);border:1px solid var(--border)}
+  h2{font-size:1.6rem;margin-top:44px;border-bottom:1px solid var(--border);padding-bottom:8px}
+  section{margin-top:8px}
+  ul{padding-left:20px}
+  .feat{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;list-style:none;padding:0}
+  @media(max-width:560px){.feat{grid-template-columns:1fr}}
+  .feat li{padding-left:26px;position:relative}
+  .feat li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+  details{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 18px;margin:10px 0}
+  summary{cursor:pointer;font-weight:600}
+  details p{color:var(--muted);margin:10px 0 0}
+  .note{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:14px 18px;margin:18px 0}
+  footer{text-align:center;color:var(--muted);padding:48px 0 32px;margin-top:40px;border-top:1px solid var(--border)}
+  a{color:var(--accent)}
+  code{background:var(--card);padding:2px 6px;border-radius:4px;font-size:.9em}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="banner.jpg" alt="Two people watching a movie together, each listening with their own headphones">
+    <h1>Double Headphones</h1>
+    <p class="tag">Play audio through <strong>two headphones at the same time</strong> on Windows.<br>No drivers. No setup. Just click and listen.</p>
+    <div class="btns">
+      <a class="btn btn-dl" href="https://github.com/maayaranai/double-headphones/releases/latest">⬇ Download for Windows (free)</a>
+      <a class="btn btn-ghost" href="https://github.com/maayaranai/double-headphones">View on GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>The problem</h2>
+    <p>You're on a train with your partner. You want to watch a movie together on your laptop — but Windows only plays audio through <strong>one device at a time</strong>. Sharing one pair of earbuds is uncomfortable, splitter cables are never in your bag, and the laptop speaker makes the whole carriage hate you.</p>
+  </section>
+
+  <section>
+    <h2>The solution</h2>
+    <p><strong>Double Headphones</strong> captures your system audio and routes it to two or more output devices at once — Bluetooth, wired, USB, any combination.</p>
+    <ol>
+      <li>Connect both headphones</li>
+      <li>Select them in the app</li>
+      <li>Click <strong>Share Audio</strong></li>
+      <li>Both headphones play the same audio, in sync</li>
+    </ol>
+    <p>When you stop, everything returns to normal automatically.</p>
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <ul class="feat">
+      <li>Play audio on 2+ devices at once</li>
+      <li>No drivers required</li>
+      <li>Any headphones — BT, wired, USB</li>
+      <li>Per-device volume</li>
+      <li>Latency compensation slider</li>
+      <li>Crash-safe audio restore</li>
+      <li>Runs in the system tray</li>
+      <li>Free forever — no ads, no tracking</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Download</h2>
+    <p>A single portable <code>.exe</code> — no installation. Windows 10 (build 20348+) or Windows 11, 64-bit.</p>
+    <div class="btns" style="justify-content:flex-start">
+      <a class="btn btn-dl" href="https://github.com/maayaranai/double-headphones/releases/latest">⬇ Download DoubleHeadphones.exe</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>On a Mac?</h2>
+    <div class="note">
+      Double Headphones is Windows-only. But macOS can already play to two headphones using its built-in <strong>Multi-Output Device</strong>. Follow the free step-by-step
+      <a href="https://github.com/maayaranai/double-headphones/blob/main/docs/mac.md">Mac guide →</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>FAQ</h2>
+    <details><summary>How do I play audio through two headphones at once on Windows?</summary><p>Download the app, connect both headphones, select them, and click Share Audio. Both play in sync. No drivers.</p></details>
+    <details><summary>Can I connect two Bluetooth headphones to my laptop?</summary><p>Yes. Pair both, select each in the app, click Share Audio. If one Bluetooth adapter stutters with two streams, a ~$10 second USB Bluetooth adapter fixes it.</p></details>
+    <details><summary>Is this a free Voicemeeter alternative?</summary><p>Yes — free forever, no drivers, and far simpler for the specific job of sharing audio to two headphones.</p></details>
+    <details><summary>Netflix / Disney+ audio is silent</summary><p>DRM apps block audio capture. Use Chrome instead of the native Windows app — it works perfectly.</p></details>
+    <details><summary>Audio is out of sync with video</summary><p>Bluetooth adds 150–250ms latency. Use the latency slider in the app, or adjust audio delay in your player (VLC: press J/K).</p></details>
+  </section>
+
+  <section>
+    <h2>Support</h2>
+    <p>Double Headphones is free forever. If it saves you from sharing earbuds on your next trip, you can <a href="https://ko-fi.com/ranmazor">buy me a coffee ☕</a>.</p>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>Built with ♥ for couples who travel together · <a href="https://github.com/maayaranai/double-headphones">GitHub</a> · <a href="privacy-policy.html">Privacy</a></p>
+</footer>
+</body>
+</html>

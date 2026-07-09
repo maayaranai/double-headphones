@@ -12,6 +12,8 @@
 <p align="center">
   <a href="https://github.com/maayaranai/double-headphones/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/Download-Windows%20x64-blue?style=for-the-badge&logo=windows" alt="Download"></a>
   &nbsp;
+  <a href="https://maayaranai.github.io/double-headphones/"><img src="https://img.shields.io/badge/Website-Learn%20more-2ea44f?style=for-the-badge&logo=github" alt="Website"></a>
+  &nbsp;
   <a href="https://ko-fi.com/ranmazor"><img src="https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-ff5e5b?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi"></a>
 </p>
 
@@ -52,6 +54,12 @@ That's it. When you stop sharing, everything goes back to normal automatically.
 **[Download DoubleHeadphones.exe](https://github.com/maayaranai/double-headphones/releases/tag/v1.0.0)** (Windows 10/11, 64-bit)
 
 Single portable .exe — no installation needed. Just download and run.
+
+## On a Mac?
+
+Double Headphones is Windows-only, but macOS can do this natively with a built-in
+**Multi-Output Device** — no download required. Follow the free step-by-step
+**[Mac guide](docs/mac.md)**.
 
 ## System Requirements
 
