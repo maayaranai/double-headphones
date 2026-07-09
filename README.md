@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/maayaranai/double-headphones/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/Download-Windows%20x64-blue?style=for-the-badge&logo=windows" alt="Download"></a>
+  <a href="https://github.com/maayaranai/double-headphones/releases/latest"><img src="https://img.shields.io/badge/Download-Windows%20x64-blue?style=for-the-badge&logo=windows" alt="Download"></a>
   &nbsp;
   <a href="https://maayaranai.github.io/double-headphones/"><img src="https://img.shields.io/badge/Website-Learn%20more-2ea44f?style=for-the-badge&logo=github" alt="Website"></a>
   &nbsp;
@@ -51,7 +51,7 @@ That's it. When you stop sharing, everything goes back to normal automatically.
 
 ## Download
 
-**[Download DoubleHeadphones.exe](https://github.com/maayaranai/double-headphones/releases/tag/v1.0.0)** (Windows 10/11, 64-bit)
+**[Download DoubleHeadphones.exe](https://github.com/maayaranai/double-headphones/releases/latest)** (Windows 10/11, 64-bit)
 
 Single portable .exe — no installation needed. Just download and run.
 
