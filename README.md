@@ -41,7 +41,7 @@ That's it. When you stop sharing, everything goes back to normal automatically.
 - **Dead simple** — three dropdowns and one button
 - **Any headphones** — Bluetooth, wired, USB DACs, speakers, any mix
 - **Per-device volume** — adjust each output independently
-- **Latency compensation** — sync Bluetooth with video using the slider
+- **Latency compensation** — align Bluetooth with wired using a 0–2 second delay slider (type an exact value too)
 - **Crash-safe** — if the app crashes, your audio restores automatically
 - **System tray** — minimize and forget about it
 - **Lightweight** — under 5% CPU
@@ -64,9 +64,9 @@ Single portable .exe — no installation needed. Just download and run.
 ## FAQ
 
 <details>
-<summary><strong>Why do I hear faint audio from my laptop speakers?</strong></summary>
+<summary><strong>Why do I hear audio from my laptop speakers?</strong></summary>
 <br>
-The app lowers the source volume to near-zero on the default device to keep the audio pipeline alive. It's effectively inaudible. Mute your laptop speakers for complete silence — you'll be listening through headphones anyway.
+You shouldn't. When one of your chosen outputs is also your Windows default device, the app quietly hands the default off to a spare output and mutes it, so nothing leaks out. If your machine has no spare device to hand it to, that one output plays normally and the app tells you — set a different device as your Windows default to silence it.
 </details>
 
 <details>
@@ -84,7 +84,7 @@ Bluetooth adds 150-250ms of latency. Use the latency slider in the app, or adjus
 <details>
 <summary><strong>Two Bluetooth headphones are stuttering</strong></summary>
 <br>
-A single Bluetooth adapter may struggle with two streams. A second USB Bluetooth adapter (~$10) solves this completely.
+Two Bluetooth devices at once usually works fine — it's the whole point of the app. If you do hit stutters, moving the headphones closer to the PC helps most. On rare setups where a single built-in adapter can't keep up with two streams, a spare USB Bluetooth adapter (~$10) removes the bottleneck.
 </details>
 
 <details>
@@ -97,7 +97,7 @@ Yes — the architecture supports unlimited devices. The current UI shows two, w
 
 - **DRM content** (Netflix app, Edge) — use Chrome as workaround
 - **Bluetooth latency** (150-250ms) — physics, use the latency slider
-- **Dual BT on single adapter** — may stutter, second USB adapter recommended
+- **Dual Bluetooth** — works on most setups; a rare built-in adapter may stutter (move devices closer, or add a spare USB adapter)
 - **Windows 10 before build 20348** — required API not available
 
 ## Support Development
