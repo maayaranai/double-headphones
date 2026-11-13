@@ -25,7 +25,7 @@ Your options? Share one pair of earbuds (uncomfortable). Use a splitter cable (w
 
 ## The Solution
 
-**Double Headphones** captures your system audio and routes it to two output devices at the same time. Bluetooth, wired, USB — any combination works.
+**Double Headphones** captures your system audio and routes it to two, three or four output devices at the same time. Bluetooth, wired, USB — any combination works.
 
 1. Connect both headphones
 2. Select them in the app
@@ -46,11 +46,13 @@ Real uses people have written to me about:
 
 ## Features
 
-- **Dual-device output** — play audio on two devices simultaneously (more than two is planned)
+- **Multi-device output** — play audio on up to four devices simultaneously
 - **No drivers required** — pure Windows APIs, nothing to install
-- **Dead simple** — three dropdowns and one button
+- **Dead simple** — pick your devices and press one button
 - **Any headphones** — Bluetooth, wired, USB DACs, speakers, any mix
 - **Per-device volume** — adjust each output independently
+- **Linked volume and volume keys** — move all sliders together, and use your keyboard volume keys while sharing
+- **Line In support** — inputs that use "Listen to this device" are shared too
 - **Latency compensation** — align Bluetooth with wired using a 0–2 second delay slider (type an exact value too)
 - **Crash-safe** — if the app crashes, your audio restores automatically
 - **Lightweight** — under 5% CPU
@@ -99,7 +101,7 @@ Two Bluetooth devices at once usually works fine — it's the whole point of the
 <details>
 <summary><strong>Can I use more than 2 devices?</strong></summary>
 <br>
-The stable version (v1.1) shares to two devices. Up to four are supported in the test build <a href="https://github.com/maayaranai/double-headphones/releases/tag/v1.2.0-beta.2">v1.2.0 beta 2</a> — feedback is welcome in <a href="https://github.com/maayaranai/double-headphones/issues/10">issue #10</a>.
+Yes, up to four. Click <strong>+ Add device</strong> under the device dropdowns. Each device gets its own volume and delay.
 </details>
 
 <details>
@@ -111,19 +113,19 @@ Share the specific application window in Discord instead of your entire screen. 
 <details>
 <summary><strong>The volume keys on my keyboard do nothing while sharing</strong></summary>
 <br>
-In v1.1, use the two volume sliders in the app while sharing. The test build <a href="https://github.com/maayaranai/double-headphones/releases/tag/v1.2.0-beta.2">v1.2.0 beta 2</a> follows the Windows volume keys.
+They work since v1.2: turning Windows volume down makes every output quieter, and turning it back up restores them. If you are on v1.1, update or use the sliders in the app.
 </details>
 
 <details>
 <summary><strong>My Line In / "Listen to this device" audio is missing while sharing</strong></summary>
 <br>
-In v1.1, Windows drops the Listen stream while the app is sharing. The test build <a href="https://github.com/maayaranai/double-headphones/releases/tag/v1.2.0-beta.2">v1.2.0 beta 2</a> records such inputs itself and mixes them into every output.
+Update to v1.2. Windows drops the Listen stream while the app is sharing, so the app now records such inputs itself and mixes them into every output. Windows must allow desktop apps to use the microphone (Settings &gt; Privacy &amp; security &gt; Microphone).
 </details>
 
 <details>
 <summary><strong>I hear nothing on either device, and my speakers go silent too</strong></summary>
 <br>
-On some sound cards the device the app records from goes silent while it is muted. The test build <a href="https://github.com/maayaranai/double-headphones/releases/tag/v1.2.0-beta.2">v1.2.0 beta 2</a> detects this and switches to a second capture method. In v1.1, set the Windows output to a device you are not sharing to before you click Share Audio.
+Update to v1.2. On some sound cards the device the app records from goes silent while it is muted; v1.2 detects this and switches to a second capture method. If it still happens, set the Windows output to a device you are not sharing to before you click Share Audio, and open an issue.
 </details>
 
 <details>
@@ -137,8 +139,8 @@ Open an <a href="https://github.com/maayaranai/double-headphones/issues">issue</
 - **DRM content** (Netflix app, Edge) — use Chrome as workaround
 - **Bluetooth latency** (150-250ms) — physics, use the latency slider
 - **Dual Bluetooth** — works on most setups; a rare built-in adapter may stutter (move devices closer, or add a spare USB adapter)
-- **Two outputs at a time** in v1.1 — up to four in the v1.2 test build
-- **FxSound** — starting FxSound while sharing interrupts v1.1; the v1.2 test build recovers automatically
+- **Up to four outputs** at a time
+- **Discord screen share** — viewers hear the audio twice; share the app window instead of the whole screen
 - **Windows 10 before build 20348** — required API not available
 
 ## Support Development
