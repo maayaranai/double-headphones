@@ -99,7 +99,7 @@ Two Bluetooth devices at once usually works fine — it's the whole point of the
 <details>
 <summary><strong>Can I use more than 2 devices?</strong></summary>
 <br>
-Not yet. The current version shares to two devices. Adding more is planned for the next version — follow <a href="https://github.com/maayaranai/double-headphones/issues/10">issue #10</a>.
+The stable version (v1.1) shares to two devices. Up to four are supported in the test build <a href="https://github.com/maayaranai/double-headphones/releases/tag/v1.2.0-beta.1">v1.2.0 beta 1</a> — feedback is welcome in <a href="https://github.com/maayaranai/double-headphones/issues/10">issue #10</a>.
 </details>
 
 <details>
@@ -111,7 +111,7 @@ Share the specific application window in Discord instead of your entire screen. 
 <details>
 <summary><strong>The volume keys on my keyboard do nothing while sharing</strong></summary>
 <br>
-While sharing, use the two volume sliders in the app. Following the Windows volume keys is planned for the next version.
+In v1.1, use the two volume sliders in the app while sharing. The test build <a href="https://github.com/maayaranai/double-headphones/releases/tag/v1.2.0-beta.1">v1.2.0 beta 1</a> follows the Windows volume keys.
 </details>
 
 <details>
