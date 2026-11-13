@@ -34,6 +34,16 @@ Your options? Share one pair of earbuds (uncomfortable). Use a splitter cable (w
 
 That's it. When you stop sharing, everything goes back to normal automatically.
 
+## What people use it for
+
+Real uses people have written to me about:
+
+- **Two headphones, one laptop** — watch a movie together on a train or a plane
+- **Headphones and speakers at the same time** — keep the speakers on while someone else listens on a headset
+- **Speakers on two monitors** — play music through both monitors instead of only one
+- **Music in two rooms** — the same audio inside and outside the house at a party
+- **Making music together** — two people listening to the same session, without a splitter cable
+
 ## Features
 
 - **Dual-device output** — play audio on two devices simultaneously (more than two is planned)
